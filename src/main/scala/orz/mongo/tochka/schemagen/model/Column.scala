@@ -17,7 +17,7 @@ object Column {
     "Int"       -> "IntFeild",
     "Long"      -> "LongFeild",
     "Double"    -> "DoubleFeild",
-    "String"    -> "TextField",
+    "String"    -> "StringField",
     "ObjectId"  -> "IdFeild"
   )
   
