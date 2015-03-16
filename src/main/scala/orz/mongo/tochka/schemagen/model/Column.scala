@@ -13,12 +13,12 @@ case class Column(name: String, typeName: String, childs: Seq[Column]) {
 object Column {
   
   val TypeMap = Map(
-    "Boolean"   -> "BoolFeild",
-    "Int"       -> "IntFeild",
-    "Long"      -> "LongFeild",
-    "Double"    -> "DoubleFeild",
+    "Boolean"   -> "BoolField",
+    "Int"       -> "IntField",
+    "Long"      -> "LongField",
+    "Double"    -> "DoubleField",
     "String"    -> "StringField",
-    "ObjectId"  -> "IdFeild"
+    "ObjectId"  -> "IdField"
   )
   
   def apply(field: Field, entities: Seq[Entity]): Column = {

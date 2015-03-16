@@ -31,7 +31,7 @@ case class <xsl:value-of select="@name"/>(
 
 <!-- ***************************************************************** object -->
 <xsl:template match="schema">
-object <xsl:value-of select="@name"/> extends <xsl:value-of select="@extends"/> {
+object <xsl:value-of select="@name"/> extends <xsl:value-of select="@extends"/>[<xsl:value-of select="@name"/>] {
 <xsl:for-each select="column">
 <xsl:apply-templates select="."><xsl:with-param name="indent" select="'  '"/></xsl:apply-templates>
 </xsl:for-each>}
